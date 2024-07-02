@@ -1,0 +1,27 @@
+def CP_calculater(argu_first, argu_second):
+    top = 1
+    bot = 1
+    result = 0
+    
+    top_list = [argu_first - a for a in range(argu_second)]
+    bot_list = [a for a in reversed(range(1, argu_second + 1))]
+    print(f"上部：{top_list}, 下部：{bot_list}")
+    if formulate_fomart == "C":
+        for i in top_list:
+            top *= i
+        for j in bot_list:
+            bot *= j         
+            
+    elif formulate_fomart == "P":
+        for i in top_list: 
+            top *= i
+            
+    result = top / bot
+    return result
+
+while True:
+    formulate_fomart = str(input("CかPかを選べ"))
+    argument_fir = int(input("第一引数:"))
+    argument_sec = int(input("第二引数:"))
+    res = CP_calculater(argument_fir, argument_sec)
+    print(res)
