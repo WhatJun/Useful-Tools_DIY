@@ -23,6 +23,6 @@ def CP_calculater(argu_first, argu_second):
 while True:
     formulate_fomart = str(input("choose C or P by enter [C] or [P]:"))
     argument_fir = int(input("enter the first argument:"))
-    argument_sec = int(input("enter the first argument:"))
+    argument_sec = int(input("enter the second argument:"))
     res = CP_calculater(argument_fir, argument_sec)
     print(res)
