@@ -4,8 +4,8 @@ def CP_calculater(argu_first, argu_second):
     denominator = 1
     result = 0
     
-    numerator_list = [argu_first - a for a in range(argu_second)]
-    denominator_list = [a for a in reversed(range(1, argu_second + 1))]
+    numerator_list = [argu_first - a for a in range(argu_second)] # {argu_first, argu_first - 1, ..., argu_first - (argu_second - 1)}
+    denominator_list = [a for a in reversed(range(1, argu_second + 1))] # {argu_second, argu_second - 1, ..., 1}
     
     if formulate_fomart == "C":
         for i in numerator_list:
